@@ -13,6 +13,6 @@ class Gerente(
     }
 
     override fun bonificacao(): Double {
-        return salario * 0.2
+        return super.bonificacao() + salario
     }
 }
