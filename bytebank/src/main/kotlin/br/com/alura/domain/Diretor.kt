@@ -12,4 +12,7 @@ class Diretor(
     fun autentica(senha: String): Boolean {
         return this.senha == senha
     }
+
+    // uma forma mais enxuta de declarar um método/função
+    override fun bonificacao() = salario * 0.15
 }
