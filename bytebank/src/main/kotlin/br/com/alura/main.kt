@@ -3,6 +3,7 @@ package br.com.alura
 import br.com.alura.domain.Diretor
 import br.com.alura.domain.Funcionario
 import br.com.alura.domain.Gerente
+import br.com.alura.utils.TotalDeBonificacao
 
 fun main(args: Array<String>) {
 
@@ -35,4 +36,11 @@ fun main(args: Array<String>) {
     } else {
         println("${f3.nome} não autenticado")
     }
+
+    val totalBonificacao = TotalDeBonificacao()
+    totalBonificacao.registraBonificacao(f1)
+    totalBonificacao.registraBonificacao(f2)
+    totalBonificacao.registraBonificacao(f3)
+    println()
+    println("Total de bonificação: ${totalBonificacao.total}")
 }
