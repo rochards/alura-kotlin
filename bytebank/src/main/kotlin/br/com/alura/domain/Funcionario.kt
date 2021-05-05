@@ -1,7 +1,6 @@
 package br.com.alura.domain
 
-// open -> torna minha classe elegível para ser utilizada em herança
-open class Funcionario(
+abstract class Funcionario(
     val nome: String,
     val cpf: String,
     var salario: Double
