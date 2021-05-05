@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.domain
 
 class ContaPoupanca(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : ContaTransferivel(titular, numero) {
 
