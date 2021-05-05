@@ -1,5 +1,6 @@
 package br.com.alura.domain
 
+// Analista herda apenas de Funcionario
 class Analista(
     nome: String,
     cpf: String,

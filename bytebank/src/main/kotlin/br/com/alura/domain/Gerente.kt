@@ -1,16 +1,12 @@
 package br.com.alura.domain
 
-// Gerente herda de Funcionario
+// Gerente herda de FuncionarioAdmin que herda de Funcionario
 class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-    private val senha: String
-) : Funcionario(nome, cpf, salario) {
-
-    fun autentica(senha: String): Boolean {
-        return this.senha == senha
-    }
+    senha: String
+) : FuncionarioAdmin(nome, cpf, salario, senha) {
 
     override fun bonificacao(): Double {
         return salario

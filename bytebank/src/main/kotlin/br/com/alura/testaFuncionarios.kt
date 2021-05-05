@@ -2,7 +2,6 @@ package br.com.alura
 
 import br.com.alura.domain.Analista
 import br.com.alura.domain.Diretor
-import br.com.alura.domain.Funcionario
 import br.com.alura.domain.Gerente
 import br.com.alura.utils.TotalDeBonificacao
 
@@ -20,11 +19,7 @@ fun testaFuncionarios() {
     println("cpf: ${f2.cpf}")
     println("salario: ${f2.salario}")
     println("bonificação: ${f2.bonificacao()}")
-    if (f2.autentica("secret")) {
-        println("${f2.nome} autenticada")
-    } else {
-        println("${f2.nome} não autenticada")
-    }
+    f2.autentica("secret")
 
     val f3 = Diretor("Lima", "247.874.347-36", 19500.57, "secret2", 1500.0)
     println()
@@ -32,11 +27,7 @@ fun testaFuncionarios() {
     println("cpf: ${f3.cpf}")
     println("salario: ${f3.salario}")
     println("bonificação: ${f3.bonificacao()}")
-    if (f3.autentica("secret")) {
-        println("${f3.nome} autenticado")
-    } else {
-        println("${f3.nome} não autenticado")
-    }
+    f3.autentica("secret")
 
     val totalBonificacao = TotalDeBonificacao()
     totalBonificacao.registraBonificacao(f1)
