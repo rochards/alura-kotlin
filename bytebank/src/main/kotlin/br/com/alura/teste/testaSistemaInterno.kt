@@ -1,4 +1,4 @@
-package br.com.alura
+package br.com.alura.teste
 
 import br.com.alura.domain.Cliente
 import br.com.alura.domain.Diretor
