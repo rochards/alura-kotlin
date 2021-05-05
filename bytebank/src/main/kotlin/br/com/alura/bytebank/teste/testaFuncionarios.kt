@@ -1,8 +1,8 @@
 package br.com.alura.bytebank.teste
 
-import br.com.alura.bytebank.domain.Analista
-import br.com.alura.bytebank.domain.Diretor
-import br.com.alura.bytebank.domain.Gerente
+import br.com.alura.bytebank.domain.funcionario.Analista
+import br.com.alura.bytebank.domain.funcionario.Diretor
+import br.com.alura.bytebank.domain.funcionario.Gerente
 import br.com.alura.bytebank.utils.TotalDeBonificacao
 
 fun testaFuncionarios() {

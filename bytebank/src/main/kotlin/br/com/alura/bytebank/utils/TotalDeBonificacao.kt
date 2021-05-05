@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.utils
 
-import br.com.alura.bytebank.domain.Funcionario
+import br.com.alura.bytebank.domain.funcionario.Funcionario
 
 class TotalDeBonificacao {
 

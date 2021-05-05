@@ -1,4 +1,4 @@
-package br.com.alura.bytebank.domain
+package br.com.alura.bytebank.domain.funcionario
 
 /*
 * Aqui cria-se a classe FuncionarioAdmin que herda de Funcionario. Quem precisar de autenticação vai herdar

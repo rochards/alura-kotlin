@@ -1,9 +1,9 @@
 package br.com.alura.bytebank.teste
 
-import br.com.alura.bytebank.domain.Cliente
-import br.com.alura.bytebank.domain.ContaCorrente
-import br.com.alura.bytebank.domain.ContaPoupanca
-import br.com.alura.bytebank.domain.ContaSalario
+import br.com.alura.bytebank.domain.cliente.Cliente
+import br.com.alura.bytebank.domain.conta.ContaCorrente
+import br.com.alura.bytebank.domain.conta.ContaPoupanca
+import br.com.alura.bytebank.domain.conta.ContaSalario
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(Cliente("Lionel", "111.111.111-11", "secret"), 1000)

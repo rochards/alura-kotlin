@@ -1,4 +1,4 @@
-package br.com.alura.bytebank.domain
+package br.com.alura.bytebank.domain.funcionario
 
 // Analista herda apenas de Funcionario
 class Analista(

@@ -1,4 +1,6 @@
-package br.com.alura.bytebank.domain
+package br.com.alura.bytebank.domain.conta
+
+import br.com.alura.bytebank.domain.cliente.Cliente
 
 class ContaCorrente(
     titular: Cliente,
