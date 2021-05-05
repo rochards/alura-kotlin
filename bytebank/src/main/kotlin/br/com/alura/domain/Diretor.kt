@@ -14,5 +14,5 @@ class Diretor(
     }
 
     // uma forma mais enxuta de declarar um método/função
-    override fun bonificacao() = super.bonificacao() + salario + plr
+    override fun bonificacao() = salario + plr
 }
