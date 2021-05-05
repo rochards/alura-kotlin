@@ -6,6 +6,9 @@ class ContaCorrente(
 ) : Conta(titular, numero) {
 
     override fun saca(valor: Double) {
-        super.saca(valor + 0.1)
+        val valorTaxado = valor + 0.10
+        if (this.saldo >= valorTaxado) {
+            this.saldo -= valorTaxado
+        }
     }
 }

@@ -1,9 +1,9 @@
 package br.com.alura.domain
 
 // esse tipo de construtor é chamado de primário
-open class Conta(val titular: String, val numero: Int) {
+abstract class Conta(val titular: String, val numero: Int) {
     var saldo = 0.0
-        private set
+        protected set // protected para que assim possa ser acessível dentro das classes filhas
 
     fun deposita(valor: Double) {
         if (valor > 0) {
@@ -11,11 +11,7 @@ open class Conta(val titular: String, val numero: Int) {
         }
     }
 
-    open fun saca(valor: Double) {
-        if (saldo >= valor) {
-            this.saldo -= valor
-        }
-    }
+    abstract fun saca(valor: Double)
 
     fun transfere(valor: Double, destino: Conta): Boolean {
         if (saldo >= valor) {
