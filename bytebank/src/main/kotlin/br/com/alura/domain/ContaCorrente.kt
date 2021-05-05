@@ -3,7 +3,7 @@ package br.com.alura.domain
 class ContaCorrente(
     titular: String,
     numero: Int
-) : Conta(titular, numero) {
+) : ContaTransferivel(titular, numero) {
 
     override fun saca(valor: Double) {
         val valorTaxado = valor + 0.10
