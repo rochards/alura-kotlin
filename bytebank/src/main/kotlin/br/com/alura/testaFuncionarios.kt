@@ -3,9 +3,12 @@ package br.com.alura
 import br.com.alura.domain.Analista
 import br.com.alura.domain.Diretor
 import br.com.alura.domain.Gerente
+import br.com.alura.domain.SistemaInterno
 import br.com.alura.utils.TotalDeBonificacao
 
 fun testaFuncionarios() {
+
+    val sistemaInterno = SistemaInterno()
 
     val f1 = Analista("Luiz", "123.654.321.31", 1000.0)
     println("nome: ${f1.nome}")
@@ -19,7 +22,7 @@ fun testaFuncionarios() {
     println("cpf: ${f2.cpf}")
     println("salario: ${f2.salario}")
     println("bonificação: ${f2.bonificacao()}")
-    f2.autentica("secret")
+    sistemaInterno.login(f2, "senha")
 
     val f3 = Diretor("Lima", "247.874.347-36", 19500.57, "secret2", 1500.0)
     println()
@@ -27,7 +30,7 @@ fun testaFuncionarios() {
     println("cpf: ${f3.cpf}")
     println("salario: ${f3.salario}")
     println("bonificação: ${f3.bonificacao()}")
-    f3.autentica("secret")
+    sistemaInterno.login(f3, "senha")
 
     val totalBonificacao = TotalDeBonificacao()
     totalBonificacao.registraBonificacao(f1)

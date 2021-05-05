@@ -12,11 +12,5 @@ abstract class FuncionarioAdmin(
     private val senha: String
 ) : Funcionario(nome, cpf, salario) {
 
-    fun autentica(senha: String) {
-        if (this.senha == senha) {
-            println("${this.nome} autenticado(a)")
-        } else {
-            println("${this.nome} não autenticado(a)")
-        }
-    }
+    fun autentica(senha: String) = this.senha == senha
 }
