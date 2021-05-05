@@ -1,9 +1,9 @@
-package br.com.alura.teste
+package br.com.alura.bytebank.teste
 
-import br.com.alura.domain.Analista
-import br.com.alura.domain.Diretor
-import br.com.alura.domain.Gerente
-import br.com.alura.utils.TotalDeBonificacao
+import br.com.alura.bytebank.domain.Analista
+import br.com.alura.bytebank.domain.Diretor
+import br.com.alura.bytebank.domain.Gerente
+import br.com.alura.bytebank.utils.TotalDeBonificacao
 
 fun testaFuncionarios() {
 

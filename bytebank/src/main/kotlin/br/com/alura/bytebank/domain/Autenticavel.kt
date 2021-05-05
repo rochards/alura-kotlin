@@ -1,4 +1,4 @@
-package br.com.alura.domain
+package br.com.alura.bytebank.domain
 
 // quem quiser se autenticar vai precisar implementar essa interface
 interface Autenticavel {

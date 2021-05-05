@@ -1,4 +1,4 @@
-package br.com.alura.domain
+package br.com.alura.bytebank.domain
 
 class ContaPoupanca(
     titular: String,

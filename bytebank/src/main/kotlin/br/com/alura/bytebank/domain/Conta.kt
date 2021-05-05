@@ -1,4 +1,4 @@
-package br.com.alura.domain
+package br.com.alura.bytebank.domain
 
 // esse tipo de construtor é chamado de primário
 abstract class Conta(val titular: String, val numero: Int) {

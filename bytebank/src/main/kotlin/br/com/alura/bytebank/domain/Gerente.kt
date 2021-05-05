@@ -1,4 +1,4 @@
-package br.com.alura.domain
+package br.com.alura.bytebank.domain
 
 // Gerente herda de FuncionarioAdmin que herda de Funcionario
 class Gerente(

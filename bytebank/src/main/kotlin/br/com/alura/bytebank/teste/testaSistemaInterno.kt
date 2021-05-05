@@ -1,9 +1,9 @@
-package br.com.alura.teste
+package br.com.alura.bytebank.teste
 
-import br.com.alura.domain.Cliente
-import br.com.alura.domain.Diretor
-import br.com.alura.domain.Gerente
-import br.com.alura.utils.SistemaInterno
+import br.com.alura.bytebank.domain.Cliente
+import br.com.alura.bytebank.domain.Diretor
+import br.com.alura.bytebank.domain.Gerente
+import br.com.alura.bytebank.utils.SistemaInterno
 
 fun testaSistemaInterno() {
 

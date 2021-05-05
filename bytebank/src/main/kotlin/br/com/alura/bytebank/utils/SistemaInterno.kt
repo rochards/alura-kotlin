@@ -1,6 +1,6 @@
-package br.com.alura.utils
+package br.com.alura.bytebank.utils
 
-import br.com.alura.domain.Autenticavel
+import br.com.alura.bytebank.domain.Autenticavel
 
 class SistemaInterno {
 
