@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.utils
 
-import br.com.alura.bytebank.domain.funcionario.Autenticavel
+import br.com.alura.bytebank.domain.compartilhado.Autenticavel
 
 class SistemaInterno {
 

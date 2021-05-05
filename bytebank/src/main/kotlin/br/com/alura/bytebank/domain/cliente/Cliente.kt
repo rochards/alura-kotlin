@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.domain.cliente
 
-import br.com.alura.bytebank.domain.funcionario.Autenticavel
+import br.com.alura.bytebank.domain.compartilhado.Autenticavel
 
 class Cliente(
     val nome: String,

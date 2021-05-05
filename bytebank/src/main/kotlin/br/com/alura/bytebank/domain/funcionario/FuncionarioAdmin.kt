@@ -1,5 +1,7 @@
 package br.com.alura.bytebank.domain.funcionario
 
+import br.com.alura.bytebank.domain.compartilhado.Autenticavel
+
 /*
 * Aqui cria-se a classe FuncionarioAdmin que herda de Funcionario. Quem precisar de autenticação vai herdar
 * diretamente de FuncionarioAdmin, pois essa implementa a interface Autenticavel, e continuará indiretamente herdando
