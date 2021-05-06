@@ -17,7 +17,7 @@ fun testaTransferenciaEntreContas() {
 
     println()
     try {
-        contaLuna.transfere(200.0, contaMara)
+        contaLuna.transfere(200.0, contaMara, "secret")
         println("Transferência realizada com sucesso!")
     } catch (e: SaldoInsuficienteException) {
         println(e.message)
@@ -28,7 +28,7 @@ fun testaTransferenciaEntreContas() {
 
     println()
     try {
-        contaLuna.transfere(3000.0, contaMara)
+        contaLuna.transfere(3000.0, contaMara, "secret")
         println("Transferência realizada com sucesso!")
     } catch (e: SaldoInsuficienteException) {
         println(e.message)
