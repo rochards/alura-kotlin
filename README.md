@@ -15,4 +15,4 @@ Introdução aos conceitos básicos de Kotlin e Orientação a Objetos
 - JDK 11 ou superior;
 - Intellij IDEA.
 
-Esse repositório representa os conceitos aprendidos nos cursos [Kotlin1](https://cursos.alura.com.br/course/kotlin-orientacao-objetos) e [Kotlin2](https://cursos.alura.com.br/course/kotlin-heranca-polimorfismo-interface) da [Alura](https://www.alura.com.br/);
+Esse repositório representa os conceitos aprendidos nos cursos [Kotlin1](https://cursos.alura.com.br/course/kotlin-orientacao-objetos), [Kotlin2](https://cursos.alura.com.br/course/kotlin-heranca-polimorfismo-interface) e [Kotlin3](https://cursos.alura.com.br/course/kotlin-recursos-da-linguagem-com-pacotes-e-composicao) da [Alura](https://www.alura.com.br/);
