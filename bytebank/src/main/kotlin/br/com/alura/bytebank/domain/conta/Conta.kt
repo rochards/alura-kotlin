@@ -27,4 +27,20 @@ abstract class Conta(
     }
 
     abstract fun saca(valor: Double)
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is Conta) return false
+
+        if (numero != other.numero) return false
+        if (saldo != other.saldo) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = numero
+        result = 31 * result + saldo.hashCode()
+        return result
+    }
 }
