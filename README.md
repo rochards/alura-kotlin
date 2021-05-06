@@ -9,7 +9,9 @@ Introdução aos conceitos básicos de Kotlin e Orientação a Objetos
 - Modificadores de acesso;
 - Properties dos atributos de classes;
 - Utilização de classes abstratas e interfaces;
-- Sobrescritas de métodos.
+- Sobrescritas de métodos;
+- Exceptions;
+- Null safety, safe call, elvis operator.
 
 ### O que é necessário para executar os arquivos
 - JDK 11 ou superior;
