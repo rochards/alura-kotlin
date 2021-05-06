@@ -2,6 +2,7 @@ package br.com.alura.bytebank.teste
 
 import br.com.alura.bytebank.domain.cliente.Cliente
 import br.com.alura.bytebank.domain.conta.ContaPoupanca
+import br.com.alura.bytebank.domain.exception.FalhaAutenticacaoException
 import br.com.alura.bytebank.domain.exception.SaldoInsuficienteException
 
 fun testaTransferenciaEntreContas() {
@@ -17,9 +18,12 @@ fun testaTransferenciaEntreContas() {
 
     println()
     try {
-        contaLuna.transfere(200.0, contaMara, "secret")
+        contaLuna.transfere(200.0, contaMara, "secret1")
         println("Transferência realizada com sucesso!")
     } catch (e: SaldoInsuficienteException) {
+        println(e.message)
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException) {
         println(e.message)
         e.printStackTrace()
     }
@@ -31,6 +35,15 @@ fun testaTransferenciaEntreContas() {
         contaLuna.transfere(3000.0, contaMara, "secret")
         println("Transferência realizada com sucesso!")
     } catch (e: SaldoInsuficienteException) {
+        println(e.message)
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException) {
+        println(e.message)
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException) {
+        println(e.message)
+        e.printStackTrace()
+    } catch (e: Exception) {
         println(e.message)
         e.printStackTrace()
     }
