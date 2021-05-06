@@ -1,6 +1,7 @@
 package br.com.alura.bytebank.teste
 
 import br.com.alura.bytebank.domain.cliente.Cliente
+import br.com.alura.bytebank.domain.conta.Conta
 import br.com.alura.bytebank.domain.conta.ContaCorrente
 import br.com.alura.bytebank.domain.conta.ContaPoupanca
 import br.com.alura.bytebank.domain.conta.ContaSalario
@@ -27,4 +28,7 @@ fun testaContasDiferentes() {
     contaCorrente.transfere(149.9, contaPoupanca)
     println("saldo de conta corrente após fazer transferência: ${contaCorrente.saldo}")
     println("saldo de conta poupança após receber transferência: ${contaPoupanca.saldo}")
+
+    println()
+    println("Total de contas criadas: ${Conta.total}")
 }
