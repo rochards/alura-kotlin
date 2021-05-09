@@ -14,5 +14,7 @@ fun testaSistemaInterno() {
     val sistemaInterno = SistemaInterno()
     sistemaInterno.login(gerente, "secret")
     sistemaInterno.login(diretor, "secret2")
-    sistemaInterno.login(cliente, "secret3")
+    sistemaInterno.login(cliente, "secret3") {
+        println("Implementando o comportamento de acao")
+    }
 }
